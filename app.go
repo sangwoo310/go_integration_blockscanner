@@ -2,17 +2,19 @@ package main
 
 import (
 	"fmt"
+	hf "github.com/sangwoo310/go_framework_hsw"
 	"github.com/urfave/cli/v2"
-	"os"
 )
 
 // set process control
 func main()  {
-	app := &cli.App{
-		Commands:Commands2,
-	}
-
-	app.Run(os.Args)
+	//app := &cli.App{
+	//	Commands:Commands2,
+	//}
+	//
+	//app.Run(os.Args)
+	s := hf.SHswFrame{Name:"hsw"}
+	hf.NewFrame(s)
 
 }
 
