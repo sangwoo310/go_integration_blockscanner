@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"github.com/urfave/cli/v2"
+	"testing"
 )
 
 func init() {
@@ -53,4 +54,9 @@ func test(ctx *cli.Context) error  {
 	fmt.Println("test commands ")
 
 	return nil
+}
+
+func TestCli(t *testing.T)  {
+	a := cli.NewApp()
+	fmt.Println(a)
 }
